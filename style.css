@@ -2676,7 +2676,6 @@ p.comment-form-comment {
   height: 130px;
   overflow: hidden;
   display: block;
-  border: 1px solid #C2C2C2;
 }
 .bio      {display: block;font-size:20px;line-height: 39px;margin:20px 0 30px 0px;padding: 0px;font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;color: rgba(20, 20, 20, 0.796875);}
 .mastimg  {height:228px; border-bottom: 1px solid #bbbbbb; margin-top: 40px;}
@@ -2696,7 +2695,7 @@ p.comment-form-comment {
 .tim      {background: url(http://a2.twimg.com/profile_images/1266952523/200551_704483756985_24408698_37833741_1990632_n.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
 
 .thumb              {position: relative; height: 130px; overflow: hidden; display: block; border: 1px solid #c2c2c2;}
-.bio .thumb                 {display: inline; float: left; margin: 5px 10px 0px 0px}
+.bio .thumb         {display: inline; float: left; margin: 5px 10px 0px 0px;border: 1px solid #C2C2C2;}
 .thumb img          {width: 150px; height: auto}
 .thumb img.sam      {background:none;margin: -40px 0 0 -20px; width:150px !important}
 .thumb img.alistair {background:none;margin: 0 0 0 -20px;}
