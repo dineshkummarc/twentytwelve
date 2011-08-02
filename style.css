@@ -2668,3 +2668,13 @@ p.comment-form-comment {
 #ie7 section.recent-posts {
 	margin-right: 7.6%;
 }
+
+
+/*Bocoup Styles*/
+.thumb {
+  position: relative;
+  height: 130px;
+  overflow: hidden;
+  display: block;
+  border: 1px solid #C2C2C2;
+}
