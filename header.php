@@ -48,61 +48,61 @@
 
    -->
 
-   <title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
+<title><?php
+  /*
+   * Print the <title> tag based on what is being viewed.
+   */
+  global $page, $paged;
 
-	wp_title( '|', true, 'right' );
+  wp_title( '|', true, 'right' );
 
-	// Add the blog name.
-	bloginfo( 'name' );
+  // Add the blog name.
+  bloginfo( 'name' );
 
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
+  // Add the blog description for the home/front page.
+  $site_description = get_bloginfo( 'description', 'display' );
+  if ( $site_description && ( is_home() || is_front_page() ) )
+    echo " | $site_description";
 
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
+  // Add a page number if necessary:
+  if ( $paged >= 2 || $page >= 2 )
+    echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 
-	?></title>
+  ?></title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php
-	/* We add some JavaScript to pages with the comment form
-	 * to support sites with threaded comments (when in use).
-	 */
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
+  /* We add some JavaScript to pages with the comment form
+   * to support sites with threaded comments (when in use).
+   */
+  if ( is_singular() && get_option( 'thread_comments' ) )
+    wp_enqueue_script( 'comment-reply' );
 
-	/* Always have wp_head() just before the closing </head>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to add elements to <head> such
-	 * as styles, scripts, and meta tags.
-	 */
-	wp_head();
+  /* Always have wp_head() just before the closing </head>
+   * tag of your theme, or you will break many plugins, which
+   * generally use this hook to add elements to <head> such
+   * as styles, scripts, and meta tags.
+   */
+  wp_head();
 ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
-	<header id="branding" role="banner">
-			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-			</hgroup>
+  <header id="branding" role="banner">
+      <hgroup>
+        <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+      </hgroup>
 
       <nav id="access" role="navigation">
         <h3 class="assistive-text">Main menu</h3>
         <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
         <div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
-      	<div class="menu-main-navigation-container">
-      	  <ul id="menu-main-navigation" class="menu">
-      	    <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="http://bocoop.com">Home</a></li>
+        <div class="menu-main-navigation-container">
+          <ul id="menu-main-navigation" class="menu">
+            <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="http://bocoop.com">Home</a></li>
             <li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4"><a href="http://training.bocoop.com">Training</a></li>
             <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a href="http://weblog.bocoop.com">Web Log</a></li>
             <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="http://about.bocoop.com">About</a></li>
@@ -113,7 +113,7 @@
         </div>
       </nav>
 
-	</header><!-- #branding -->
+  </header><!-- #branding -->
 
 
-	<div id="main">
+  <div id="main">
