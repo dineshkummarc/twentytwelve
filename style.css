@@ -2669,6 +2669,177 @@ p.comment-form-comment {
 	margin-right: 7.6%;
 }
 
+/* Thanks to Dave Gamache's work on skeleton */
+
+/* #Base 960 Grid */
+
+.container  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.column, .columns  { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+.row  { margin-bottom: 20px; }
+
+/* Nested Column Classes */
+.column.alpha, .columns.alpha  { margin-left: 0; }
+.column.omega, .columns.omega  { margin-right: 0; }
+
+/* Base Grid */
+.container .one.column  { width: 40px;  }
+.container .two.columns  { width: 100px; }
+.container .three.columns  { width: 160px; }
+.container .four.columns   { width: 220px; }
+.container .five.columns   { width: 280px; }
+.container .six.columns  { width: 340px; }
+.container .seven.columns  { width: 400px; }
+.container .eight.columns  { width: 460px; }
+.container .nine.columns   { width: 520px; }
+.container .ten.columns  { width: 580px; }
+.container .eleven.columns   { width: 640px; }
+.container .twelve.columns   { width: 700px; }
+.container .thirteen.columns  { width: 760px; }
+.container .fourteen.columns  { width: 820px; }
+.container .fifteen.columns  { width: 880px; }
+.container .sixteen.columns  { width: 940px; }
+
+.container .one-third.column  { width: 300px; }
+.container .two-thirds.column  { width: 620px; }
+
+/* Offsets */   
+.container .offset-by-one  { padding-left: 60px;  }
+.container .offset-by-two  { padding-left: 120px; }
+.container .offset-by-three  { padding-left: 180px; }
+.container .offset-by-four   { padding-left: 240px; }
+.container .offset-by-five   { padding-left: 300px; }
+.container .offset-by-six  { padding-left: 360px; }
+.container .offset-by-seven  { padding-left: 420px; }
+.container .offset-by-eight  { padding-left: 480px; }
+.container .offset-by-nine   { padding-left: 540px; }
+.container .offset-by-ten  { padding-left: 600px; }
+.container .offset-by-eleven  { padding-left: 660px; }
+.container .offset-by-twelve  { padding-left: 720px; }
+.container .offset-by-thirteen  { padding-left: 780px; }
+.container .offset-by-fourteen  { padding-left: 840px; }
+.container .offset-by-fifteen  { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait) 768px wide */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container  { width: 768px; }
+  .container .column,
+  .container .columns   { margin-left: 10px; margin-right: 10px;  }
+  .column.alpha, .columns.alpha  { margin-left: 0; margin-right: 10px; }
+  .column.omega, .columns.omega  { margin-right: 0; margin-left: 10px; }
+
+  .container .one.column  { width: 28px; }
+  .container .two.columns  { width: 76px; }
+  .container .three.columns  { width: 124px; }
+  .container .four.columns   { width: 172px; }
+  .container .five.columns   { width: 220px; }
+  .container .six.columns  { width: 268px; }
+  .container .seven.columns  { width: 316px; }
+  .container .eight.columns  { width: 364px; }
+  .container .nine.columns   { width: 412px; }
+  .container .ten.columns  { width: 460px; }
+  .container .eleven.columns   { width: 508px; }
+  .container .twelve.columns   { width: 556px; }
+  .container .thirteen.columns  { width: 604px; }
+  .container .fourteen.columns  { width: 652px; }
+  .container .fifteen.columns  { width: 700px; }
+  .container .sixteen.columns  { width: 748px; }
+  
+  .container .one-third.column  { width: 236px; }
+  .container .two-thirds.column  { width: 492px; }
+  
+  /* Offsets */   
+  .container .offset-by-one  { padding-left: 48px; }
+  .container .offset-by-two  { padding-left: 96px; }
+  .container .offset-by-three  { padding-left: 144px; }
+  .container .offset-by-four   { padding-left: 192px; }
+  .container .offset-by-five   { padding-left: 240px; }
+  .container .offset-by-six  { padding-left: 288px; }
+  .container .offset-by-seven  { padding-left: 336px; }
+  .container .offset-by-eight  { padding-left: 348px; }
+  .container .offset-by-nine   { padding-left: 432px; }
+  .container .offset-by-ten  { padding-left: 480px; }
+  .container .offset-by-eleven  { padding-left: 528px; }
+  .container .offset-by-twelve  { padding-left: 576px; }
+  .container .offset-by-thirteen  { padding-left: 624px; }
+  .container .offset-by-fourteen  { padding-left: 672px; }
+  .container .offset-by-fifteen  { padding-left: 720px; }
+}
+  
+  
+/*  #Mobile (Portrait) 320px wide */
+
+@media only screen and (max-width: 767px) {
+  .container { width: 300px; }
+  .columns, .column { margin: 0; }
+  
+  .container .one.column,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns, 
+  .container .one-third.column, 
+  .container .two-thirds.column  { width: 300px; }
+  
+  /* Offsets */   
+  .container .offset-by-one,  
+  .container .offset-by-two,    
+  .container .offset-by-three,  
+  .container .offset-by-four,     
+  .container .offset-by-five,     
+  .container .offset-by-six,    
+  .container .offset-by-seven,  
+  .container .offset-by-eight,  
+  .container .offset-by-nine,     
+  .container .offset-by-ten,    
+  .container .offset-by-eleven,   
+  .container .offset-by-twelve,   
+  .container .offset-by-thirteen,       
+  .container .offset-by-fourteen,       
+  .container .offset-by-fifteen { padding-left: 0; }      
+      
+}  
+
+
+/*  Mobile (Landscape) 480px wide */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container { width: 420px; }
+  .columns, .column { margin: 0; }
+  
+  .container .one.column,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column, 
+  .container .two-thirds.column { width: 420px; }
+}
+
 
 /*Bocoup Styles*/
 .thumb {
@@ -2677,40 +2848,40 @@ p.comment-form-comment {
   overflow: hidden;
   display: block;
 }
-.bio      {display: block;font-size:20px;line-height: 39px;margin:20px 0 30px 0px;padding: 0px;font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;color: rgba(20, 20, 20, 0.796875);}
+.bio   {display: block;font-size:20px;line-height: 39px;margin:20px 0 30px 0px;padding: 0px;font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;color: rgba(20, 20, 20, 0.796875);}
 .mastimg  {height:228px; border-bottom: 1px solid #bbbbbb; margin-top: 40px;}
 .bob {background:url("http://bocoup.com/core/brandguide/logo/bocoup-604.png") no-repeat scroll right top transparent;height:502px;margin-top:-80px;width:389px !important;z-index:-10;border-bottom: 1px solid #ccc}
-.sam      {background: url(http://a3.twimg.com/profile_images/808132671/sam-clearman.jpg)     no-repeat -135px -160px; border: 1px solid #bbbbbb;}
-.alistair {background: url(http://a3.twimg.com/profile_images/275415881/me.jpg)               no-repeat 0px    0px;   border: 1px solid #bbbbbb; }
-.rick     {background: url(http://a3.twimg.com/profile_images/732025391/rick_jedi_avatar.jpg) no-repeat 0px    -20px; border: 1px solid #bbbbbb; height: 188px}
-.boaz     {background: url(http://boazsender.com/boaz-sender.jpg)     no-repeat -140px -75px; border: 1px solid #bbbbbb; width: 208px} /*http://a2.twimg.com/profile_images/1102121814/boaz.jpg http://a1.twimg.com/profile_images/75388330/Recent-1-copy.jpg*/
-.nick     {background: url(http://a1.twimg.com/profile_images/818635450/gram.jpg)             no-repeat -130px    -40px;   border: 1px solid #bbbbbb;}
-.pete     {background: url(http://petekarl.com/petekarl.png)                                  no-repeat -130px    -40px;   border: 1px solid #bbbbbb;}
-.nate     {background: url(http://a3.twimg.com/profile_images/874761113/img_0029.jpg)         no-repeat -170px    -70px;   border: 1px solid #bbbbbb;}
-.david    {background: url() no-repeat top right; margin-top: -10px;}
-.scott    {background: url(http://a1.twimg.com/profile_images/969209058/twitter.png) no-repeat -0px -0px;   border: 1px solid #bbbbbb;}
-.ben      {background: url(http://a0.twimg.com/profile_images/860569124/headshot_kangol_200_bigger.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
-.tim      {background: url(http://a0.twimg.com/profile_images/354448444/5211_592192853855_24408698_34686948_7652015_n_reasonably_small.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; width: 228px}
-.tim      {background: url(https://s3.amazonaws.com/twitter_production/profile_images/530311059/twitpic.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
-.tim      {background: url(http://a2.twimg.com/profile_images/1266952523/200551_704483756985_24408698_37833741_1990632_n.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
+.sam   {background: url(http://a3.twimg.com/profile_images/808132671/sam-clearman.jpg)   no-repeat -135px -160px; border: 1px solid #bbbbbb;}
+.alistair {background: url(http://a3.twimg.com/profile_images/275415881/me.jpg)   no-repeat 0px  0px;   border: 1px solid #bbbbbb; }
+.rick  {background: url(http://a3.twimg.com/profile_images/732025391/rick_jedi_avatar.jpg) no-repeat 0px  -20px; border: 1px solid #bbbbbb; height: 188px}
+.boaz  {background: url(http://boazsender.com/boaz-sender.jpg)   no-repeat -140px -75px; border: 1px solid #bbbbbb; width: 208px} /*http://a2.twimg.com/profile_images/1102121814/boaz.jpg http://a1.twimg.com/profile_images/75388330/Recent-1-copy.jpg*/
+.nick  {background: url(http://a1.twimg.com/profile_images/818635450/gram.jpg)       no-repeat -130px  -40px;   border: 1px solid #bbbbbb;}
+.pete  {background: url(http://petekarl.com/petekarl.png)      no-repeat -130px  -40px;   border: 1px solid #bbbbbb;}
+.nate  {background: url(http://a3.twimg.com/profile_images/874761113/img_0029.jpg)     no-repeat -170px  -70px;   border: 1px solid #bbbbbb;}
+.david  {background: url() no-repeat top right; margin-top: -10px;}
+.scott  {background: url(http://a1.twimg.com/profile_images/969209058/twitter.png) no-repeat -0px -0px;   border: 1px solid #bbbbbb;}
+.ben   {background: url(http://a0.twimg.com/profile_images/860569124/headshot_kangol_200_bigger.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
+.tim   {background: url(http://a0.twimg.com/profile_images/354448444/5211_592192853855_24408698_34686948_7652015_n_reasonably_small.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; width: 228px}
+.tim   {background: url(https://s3.amazonaws.com/twitter_production/profile_images/530311059/twitpic.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
+.tim   {background: url(http://a2.twimg.com/profile_images/1266952523/200551_704483756985_24408698_37833741_1990632_n.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
 
-.thumb              {position: relative; height: 130px; overflow: hidden; display: block; border: 1px solid #c2c2c2;}
-.bio .thumb         {display: inline; float: left; margin: 5px 10px 0px 0px;border: 1px solid #C2C2C2;}
-.thumb img          {width: 150px; height: auto}
-.thumb img.sam      {background:none;margin: -40px 0 0 -20px; width:150px !important}
+.thumb  {position: relative; height: 130px; overflow: hidden; display: block; border: 1px solid #c2c2c2;}
+.bio .thumb  {display: inline; float: left; margin: 5px 10px 0px 0px;border: 1px solid #C2C2C2;}
+.thumb img  {width: 150px; height: auto}
+.thumb img.sam   {background:none;margin: -40px 0 0 -20px; width:150px !important}
 .thumb img.alistair {background:none;margin: 0 0 0 -20px;}
-.thumb img.rick     {background:none;margin: -20px 0 0 -20px;}
-.thumb img.boaz     {background:none;margin: -20px 0 0 -24px;}
-.statement .thumb img.boaz     {background:none;margin: -20px 0 0 -8px;}
-.thumb img.nick     {background:none;margin: 0 0 0 -30px; width: 160px}
-.thumb img.nate     {background:none;margin: -12px 0px 0px -50px; width: 190px}
-.thumb img.scott    {background:none;margin: 0 0 0 -20px;}
-.thumb img.pete     {background:none;margin: -30px 0 0 -35px;}
-.thumb img.ben      {background:none;margin: -20px 0 0 0px;}
-.thumb img.tim      {background:none;margin: -70px 0 0 0px;}
-.thumb img.adam     {background:none;margin: -20px 0 0 -15px;}
+.thumb img.rick  {background:none;margin: -20px 0 0 -20px;}
+.thumb img.boaz  {background:none;margin: -20px 0 0 -24px;}
+.statement .thumb img.boaz  {background:none;margin: -20px 0 0 -8px;}
+.thumb img.nick  {background:none;margin: 0 0 0 -30px; width: 160px}
+.thumb img.nate  {background:none;margin: -12px 0px 0px -50px; width: 190px}
+.thumb img.scott  {background:none;margin: 0 0 0 -20px;}
+.thumb img.pete  {background:none;margin: -30px 0 0 -35px;}
+.thumb img.ben   {background:none;margin: -20px 0 0 0px;}
+.thumb img.tim   {background:none;margin: -70px 0 0 0px;}
+.thumb img.adam  {background:none;margin: -20px 0 0 -15px;}
 .thumb img.sbisbee  {background:none;margin: -20px 0 0 -15px;}
 .thumb img.richard  {background:none;margin: 0px 0 0 -11px; width: 130px}
-.minithumb          { border: 1px solid #c2c2c2;display:block;height:68px;overflow:hidden;position:relative;}
+.minithumb  { border: 1px solid #c2c2c2;display:block;height:68px;overflow:hidden;position:relative;}
 .minithumb img.rick {height: 70px}
 .minithumb img.boaz {width: 70px}
