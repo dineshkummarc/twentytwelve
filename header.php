@@ -70,6 +70,7 @@
 
   ?></title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link href="http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -93,27 +94,29 @@
 <div id="page" class="hfeed">
   <header id="branding" role="banner">
       <hgroup>
-        <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+        <h1 id="site-title">
+          <span>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+          </span>
+        </h1>
+				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<div class="bob"></div>
       </hgroup>
-
       <nav id="access" role="navigation">
         <h3 class="assistive-text">Main menu</h3>
         <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
         <div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
-        <div class="menu-main-navigation-container">
-          <ul id="menu-main-navigation" class="menu">
-            <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="http://bocoop.com">Home</a></li>
-            <li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4"><a href="http://training.bocoop.com">Training</a></li>
-            <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a href="http://weblog.bocoop.com">Web Log</a></li>
-            <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="http://about.bocoop.com">About</a></li>
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="http://code.bocoop.com">Code</a></li>
-            <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="http://hello.bocoop.com">RFP</a></li>
-            <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://loft.bocoop.com">The Loft</a></li>
+        <div>
+          <ul>
+            <li id="menu-item-14" class=""><a href="http://bocoop.com">Home</a></li>
+            <li id="menu-item-4" class=""><a href="http://training.bocoop.com">Training</a></li>
+            <li id="menu-item-5" class=""><a href="http://weblog.bocoop.com">Web Log</a></li>
+            <li id="menu-item-6" class=""><a href="http://about.bocoop.com">About</a></li>
+            <li id="menu-item-7" class=""><a href="http://code.bocoop.com">Code</a></li>
+            <li id="menu-item-8" class=""><a href="http://hello.bocoop.com">RFP</a></li>
+            <li id="menu-item-9" class=""><a href="http://loft.bocoop.com">The Loft</a></li>
           </ul>
         </div>
       </nav>
-
-  </header><!-- #branding -->
-
-
+  </header>
   <div id="main">

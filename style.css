@@ -35,7 +35,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 }
 body {
-	background: #fff;
 	line-height: 1;
 }
 ol, ul {
@@ -319,11 +318,9 @@ body, input, textarea {
 	font-weight: 300;
 	line-height: 1.625;
 }
-body {
-	background: #e2e2e2;
-}
 #page {
-	background: #fff;
+/*  background: #fff;
+*/
 }
 
 /* Headings */
@@ -501,12 +498,13 @@ a:hover {
 ----------------------------------------------- */
 
 #branding {
-	border-top: 2px solid #bbb;
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 2;
 }
 #site-title {
+  text-transform: uppercase;
+  letter-spacing:3px;
 	margin-right: 270px;
 	padding: 3.65625em 0 0;
 }
@@ -538,11 +536,16 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#252525, #0a0a0a);
-	background: -o-linear-gradient(#252525, #0a0a0a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	background: #666; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#FC4E3C, #BC0E0C);
+	background: -o-linear-gradient(#FC4E3C, #BC0E0C);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FC4E3C), to(#BC0E0C)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#FC4E3C, #BC0E0C);
+
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
 	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
@@ -550,7 +553,9 @@ a:hover {
 	display: block;
 	float: left;
 	margin: 0 auto 6px;
-	width: 100%;
+	width: 102%;
+	left: -1%;
+	position: absolute;
 }
 #access ul {
 	font-size: 13px;
@@ -2842,6 +2847,16 @@ p.comment-form-comment {
 
 
 /*Bocoup Styles*/
+
+html {
+/*
+  background-image: url(images/stripe.png);
+  background-repeat: repeat-x;
+*/
+}
+body {
+  background: url(images/bg.jpg);
+}
 .thumb {
   position: relative;
   height: 130px;
@@ -2850,7 +2865,26 @@ p.comment-form-comment {
 }
 .bio   {display: block;font-size:20px;line-height: 39px;margin:20px 0 30px 0px;padding: 0px;font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;color: rgba(20, 20, 20, 0.796875);}
 .mastimg  {height:228px; border-bottom: 1px solid #bbbbbb; margin-top: 40px;}
-.bob {background:url("http://bocoup.com/core/brandguide/logo/bocoup-604.png") no-repeat scroll right top transparent;height:502px;margin-top:-80px;width:389px !important;z-index:-10;border-bottom: 1px solid #ccc}
+.bob {
+  background:url("http://bocoup.com/core/brandguide/logo/bocoup-604.png") no-repeat scroll right top transparent;
+  height: 604px;
+  margin-top: -80px;
+  width: 389px !important;
+  z-index: -10;
+  top: 187px;
+  position: absolute;
+  right: -50px;
+}
+header .bob {
+  background:url("images/bocoup-200.png") no-repeat scroll right top transparent;
+  height: 200px;
+  margin-top: 0;
+  top: 0px;
+  position: absolute;
+  right: 60px;
+  float: right;
+  
+}
 .sam   {background: url(http://a3.twimg.com/profile_images/808132671/sam-clearman.jpg)   no-repeat -135px -160px; border: 1px solid #bbbbbb;}
 .alistair {background: url(http://a3.twimg.com/profile_images/275415881/me.jpg)   no-repeat 0px  0px;   border: 1px solid #bbbbbb; }
 .rick  {background: url(http://a3.twimg.com/profile_images/732025391/rick_jedi_avatar.jpg) no-repeat 0px  -20px; border: 1px solid #bbbbbb; height: 188px}
@@ -2885,3 +2919,98 @@ p.comment-form-comment {
 .minithumb  { border: 1px solid #c2c2c2;display:block;height:68px;overflow:hidden;position:relative;}
 .minithumb img.rick {height: 70px}
 .minithumb img.boaz {width: 70px}
+
+hr.clear {
+  color: none !important;
+  width: 100%;
+  clear:both;
+  height: 1px;
+  margin: 0px;
+}
+hr.space {
+  margin: 20px 0px;
+}
+
+ul.listless  {list-style-type: none;margin: 0;}
+.listless li {list-style-type: none;margin: 0 0 10px 0;}
+.center  {text-align: center}
+.fine  {font-size: .6em}
+.bordered  {border: 1px solid #c2c2c2}
+.alignright  {float: right; margin: 0 0 10px 10px}
+.alignleft  {float: left; margin: 0 10px 10px 0}
+
+h1.section, h2.section  {background: url("../img/long-line.png") no-repeat scroll -155px bottom transparent;margin: 0 0 10px 0;}
+h1.section  {line-height: 1.4;padding: 0 0 7px 0}
+#color{border-bottom: 1px solid #3F002A;}
+.statement {
+  position: relative;
+  left: -195px;
+}
+.statement h2 {
+  font-size:22px;line-height:1.8;margin:120px 0 151px 100px; font-weight: normal;font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;color: #444;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: -196px;
+  margin:0px 77px
+}
+.statement h2 em, .bio em {font-size: 50px;line-height:1;font-style: normal}
+.navi h2 a  {display:block;margin:-4px 0 0 -4px;padding:15px 0;position:relative;text-align:center;width:136px;color: #222;text-shadow:  0 1px 0 rgba(255, 255, 255, 0.5)}
+.curlie{font-size:250px; line-height: 1.2;margin: 35px 0 0 0;color: rgba(0,0,0, 0.2);text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);height: 280px}
+
+/*Color Blocks*/
+.colora{background-color: #dd4f4c;}
+.colorb{background-color: #EDD155;}
+.colorc{background-color: #fdbf42;}
+.colord{background-color: #78B340;}
+.colore{background-color: #40B383;}
+.colorf{background-color: #409EB3;}
+.colorg{background-color: #B86CAF;}
+.colorh{background-color: #cc0000;}
+.colori{background-color: #cc0043;}
+.colorj{background-color: #cc00b2;}
+.colork{background-color: #0066cc;}
+.colorl{background-color: #de1c8e;}
+.colorm{background-color: #7a108a;}
+.colorn{background-color: #2a108a;}
+.coloro{background-color: #10808a;}
+.colorp{background-color: #00a3cc;}
+.colorq{background-color: #00cc9e;}
+.colorr{background-color: #00cc2b;}
+.colors{background-color: #52cc00;}
+.colort{background-color: #86cc00;}
+.coloru{background-color: #b2cc00;}
+.colorv{background-color: #cca300;}
+.colorw{background-color: #cc5b00;}
+.colorx{background-color: #cc4800;}
+.colory{background-color: #cc1d00;}
+
+#stripe {
+  position: absolute;
+  top: 0px;
+}
+/*Padded Grid*/
+div.pad-1, div.pad-2, div.pad-3, div.pad-4, div.pad-5, div.pad-6, div.pad-7, div.pad-8, div.pad-9, div.pad-10, div.pad-11, div.pad-12, div.pad-13, div.pad-14, div.pad-15, div.pad-16, div.pad-17, div.pad-18, div.pad-19, div.pad-20, div.pad-21, div.pad-22, div.pad-23, div.pad-24 {float:left;padding:4px;}
+.lastPad, div.lastPad {padding-right:6px;width: 130px}
+.pad-1 {width:30px;}
+.pad-2 {width:70px;}
+.pad-3 {width:127px;}/*should be 110*/
+.pad-4 {width:150px;}
+.pad-5 {width:190px;}
+.pad-6 {width:230px;}
+.pad-7 {width:270px;}
+.pad-8 {width:310px;}
+.pad-9 {width:350px;}
+.pad-10 {width:390px;}
+.pad-11 {width:430px;}
+.pad-12 {width:470px;}
+.pad-13 {width:510px;}
+.pad-14 {width:550px;}
+.pad-15 {width:590px;}
+.pad-16 {width:630px;}
+.pad-17 {width:670px;}
+.pad-18 {width:710px;}
+.pad-19 {width:750px;}
+.pad-20 {width:790px;}
+.pad-21 {width:830px;}
+.pad-22 {width:870px;}
+.pad-23 {width:910px;}
+.pad-24, div.pad-24 {width:950px;margin:0;}
