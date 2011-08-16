@@ -519,7 +519,8 @@ a:hover {
 }
 
 #site-title {
-  font-family: /*Gothamy, */'OFL Sorts Mill Goudy TT', Gothamy, Gotham-Book, Arial, sans-serif;
+  text-transform: uppercase;
+  font-family: Gothamy, Gotham-Book, Arial, sans-serif;
   font-weight: bold;
   letter-spacing:3px;
 	margin-right: 270px;
@@ -535,18 +536,15 @@ a:hover {
 #site-title a:hover,
 #site-title a:focus,
 #site-title a:active {
-/*  color: #007;
-*/
+	color: #007;
 }
 #site-description {
-  font-family: /*gothamy,*/ Arial, sans-serif;
-  letter-spacing: 3px;
-  word-spacing: 6px;
-  color: #7A7A7A;
-  font-size: 9px;
-  margin: 5px 270px 3.65625em 0px;
-  width: 210px;
   text-transform: uppercase;
+  font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+  letter-spacing:3px;
+	color: #7a7a7a;
+	font-size: 11px;
+	margin: 0 270px 3.65625em 10px;
 }
 #branding img {
 	height: auto;
@@ -559,23 +557,23 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-/*
-  background: #FC4E3C;
-  background: -moz-linear-gradient(#FC4E3C, #BC0E0C);
-  background: -o-linear-gradient(#FC4E3C, #BC0E0C);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(# ), to(#BC0E0C));
-  background: -webkit-linear-gradient(#FC4E3C, #BC0E0C);
+	background: #FC4E3C;
+	background: -moz-linear-gradient(#FC4E3C, #BC0E0C);
+	background: -o-linear-gradient(#FC4E3C, #BC0E0C);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(# ), to(#BC0E0C));
+	background: -webkit-linear-gradient(#FC4E3C, #BC0E0C);
 
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;  
+  -webkit-border-top-right-radius: 30px;
+  -webkit-border-bottom-right-radius: 30px;
+  -moz-border-radius-topright: 30px;
+  -moz-border-radius-bottomright: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-  top: 155px;
-  border-top: 2px solid #333;
-*/
+  
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	clear: both;
 	display: block;
 	float: left;
@@ -584,7 +582,7 @@ a:hover {
 	position: absolute;
 }
 #access ul {
-	font-size: 14px;
+	font-size: 13px;
 	list-style: none;
 	margin: 0 0 0 -0.8125em;
 	padding-left: 0;
@@ -594,7 +592,7 @@ a:hover {
 	position: relative;
 }
 #access a {
-	color: #333;
+	color: #eee;
 	display: block;
 	line-height: 3.333em;
 	padding: 0 1.2125em;
@@ -631,18 +629,16 @@ a:hover {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-/*  background: #efefef;
-*/
+	background: #efefef;
 }
 #access li:hover > a,
 #access a:focus {
-/*  background: #f9f9f9;*/ /* Show a solid color for older browsers */
-/*  background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-  background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5));
-  background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-*/  color: #009;
-
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	color: #373737;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -2877,22 +2873,18 @@ p.comment-form-comment {
 /*Bocoup Styles*/
 
 html {
-
+/*
   background-image: url(images/stripe.png);
   background-repeat: repeat-x;
-
+*/
 }
 body {
   background: url(images/bg.jpg);
-  position: relative;
-  top: -26px;
 }
 header {
-/*
   background: url(images/bookmark.png) no-repeat -117px 13px;
-  border-left: 2px solid #333;
+  border-left: 1px solid #333;
   height: 195px;  
-*/
 }
 .thumb {
   position: relative;
@@ -2903,29 +2895,29 @@ header {
 .bio   {display: block;font-size:20px;line-height: 39px;margin:20px 0 30px 0px;padding: 0px;font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;color: rgba(20, 20, 20, 0.796875);}
 .mastimg  {height:228px; border-bottom: 1px solid #bbbbbb; margin-top: 40px;}
 .bob {
-  background:url("images/bocoup-604.png") no-repeat scroll right top transparent;
-  height: 470px;
+  background:url("http://bocoup.com/core/brandguide/logo/bocoup-604.png") no-repeat scroll right top transparent;
+  height: 604px;
+  margin-top: -80px;
   width: 389px !important;
-  top: -95px;
+  z-index: -10;
+  top: 187px;
   position: absolute;
-  right: -80px;
-  border-bottom: 1px solid #C2C2C2;
+  right: -50px;
 }
 header .bob {
   background:url("images/bocoup-604.png") no-repeat scroll right top transparent;
-  height: 258px;
+  height: 280px;
   margin-top: 0;
-  top: -103px;
+  top: -90px;
   position: absolute;
   right: -10px;
   float: right;
   
 }
-/*
 .sam   {background: url(http://a3.twimg.com/profile_images/808132671/sam-clearman.jpg)   no-repeat -135px -160px; border: 1px solid #bbbbbb;}
 .alistair {background: url(http://a3.twimg.com/profile_images/275415881/me.jpg)   no-repeat 0px  0px;   border: 1px solid #bbbbbb; }
 .rick  {background: url(http://a3.twimg.com/profile_images/732025391/rick_jedi_avatar.jpg) no-repeat 0px  -20px; border: 1px solid #bbbbbb; height: 188px}
-.boaz  {background: url(http://boazsender.com/boaz-sender.jpg)   no-repeat -140px -75px; border: 1px solid #bbbbbb; width: 208px} 
+.boaz  {background: url(http://boazsender.com/boaz-sender.jpg)   no-repeat -140px -75px; border: 1px solid #bbbbbb; width: 208px} /*http://a2.twimg.com/profile_images/1102121814/boaz.jpg http://a1.twimg.com/profile_images/75388330/Recent-1-copy.jpg*/
 .nick  {background: url(http://a1.twimg.com/profile_images/818635450/gram.jpg)       no-repeat -130px  -40px;   border: 1px solid #bbbbbb;}
 .pete  {background: url(http://petekarl.com/petekarl.png)      no-repeat -130px  -40px;   border: 1px solid #bbbbbb;}
 .nate  {background: url(http://a3.twimg.com/profile_images/874761113/img_0029.jpg)     no-repeat -170px  -70px;   border: 1px solid #bbbbbb;}
@@ -2935,7 +2927,7 @@ header .bob {
 .tim   {background: url(http://a0.twimg.com/profile_images/354448444/5211_592192853855_24408698_34686948_7652015_n_reasonably_small.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; width: 228px}
 .tim   {background: url(https://s3.amazonaws.com/twitter_production/profile_images/530311059/twitpic.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
 .tim   {background: url(http://a2.twimg.com/profile_images/1266952523/200551_704483756985_24408698_37833741_1990632_n.jpg) no-repeat -0px -0px;   border: 1px solid #bbbbbb; }
-*/
+
 .thumb  {position: relative; height: 130px; overflow: hidden; display: block; border: 1px solid #c2c2c2;}
 .bio .thumb  {display: inline; float: left; margin: 5px 10px 0px 0px;border: 1px solid #C2C2C2;}
 .thumb img  {width: 150px; height: auto}
@@ -2976,7 +2968,7 @@ ul.listless  {list-style-type: none;margin: 0;}
 .alignright  {float: right; margin: 0 0 10px 10px}
 .alignleft  {float: left; margin: 0 10px 10px 0}
 
-h1.section, h2.section  {;margin: 0 0 10px 0;}
+h1.section, h2.section  {background: url("../img/long-line.png") no-repeat scroll -155px bottom transparent;margin: 0 0 10px 0;}
 h1.section  {
   line-height: 1.4;padding: 0 0 7px 0;
   font-size: 26px;
@@ -2985,34 +2977,17 @@ h1.section  {
 #color{border-bottom: 1px solid #3F002A;}
 .statement {
   position: relative;
-  width:585px;
-  height: 350px;
-  top: -40px;
-  left: -55px;
+  left: -195px;
 }
 .statement h2 {
-  font-size:22px;
-  line-height:1.8;
-  margin:120px 0 151px 100px;
-  font-weight: normal;
-  font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;
-  color: #444;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  font-size:22px;line-height:1.8;margin:120px 0 151px 100px; font-weight: normal;font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;color: #444;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   position: relative;
-  top: -190px;
-  margin:0px 90px
+  top: -196px;
+  margin:0px 77px
 }
 .statement h2 em, .bio em {font-size: 50px;line-height:1;font-style: normal}
 .navi h2 a  {display:block;margin:-4px 0 0 -4px;padding:15px 0;position:relative;text-align:center;width:136px;color: #222;text-shadow:  0 1px 0 rgba(255, 255, 255, 0.5)}
-.curlie{
-  font-family:arial, helvetica, sans-serif;
-  font-size:250px;
-  line-height: 1.2;
-  margin: 0 0 0 0;
-  color: rgba(0,0,0, 0.2);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
-  height: 280px;
-}
+.curlie{font-size:250px; line-height: 1.2;margin: 35px 0 0 0;color: rgba(0,0,0, 0.2);text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);height: 280px}
 
 /*Color Blocks*/
 .colora{background-color: #dd4f4c;}
