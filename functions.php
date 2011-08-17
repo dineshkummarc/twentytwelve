@@ -97,8 +97,19 @@ function twentyeleven_setup() {
 	// Add default posts and comments RSS feed links to <head>.
 	add_theme_support( 'automatic-feed-links' );
 
+
 	// This theme uses wp_nav_menu() in one location.
+
+  global $wpdb;
+  $current_blogid = $wpdb->blogid;
+  $wpdb->set_blog_id(1);
+  wp_cache_reset();
 	register_nav_menu( 'primary', __( 'Primary Menu', 'twentyeleven' ) );
+  $wpdb->set_blog_id($current_blogid);
+  wp_cache_reset();
+  unset($current_blogid);
+
+
 
 	// Add support for a variety of post formats
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );
@@ -425,6 +436,7 @@ add_action( 'widgets_init', 'twentyeleven_widgets_init' );
  * Display navigation to next/previous pages when applicable
  */
 function twentyeleven_content_nav( $nav_id ) {
+
 	global $wp_query;
 
 	if ( $wp_query->max_num_pages > 1 ) : ?>
