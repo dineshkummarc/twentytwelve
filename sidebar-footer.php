@@ -20,6 +20,12 @@
 	)
 		return;
 	// If we get this far, we have widgets. Let do this.
+
+	global $wpdb;
+  $current_blogid = $wpdb->blogid;
+  $wpdb->set_blog_id(1);
+  wp_cache_reset();
+
 ?>
 <div id="supplementary" <?php twentyeleven_footer_sidebar_class(); ?>>
 	<?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
@@ -38,5 +44,10 @@
 	<div id="third" class="widget-area" role="complementary">
 		<?php dynamic_sidebar( 'sidebar-5' ); ?>
 	</div><!-- #third .widget-area -->
-	<?php endif; ?>
+	<?php endif; 
+	
+	$wpdb->set_blog_id($current_blogid);
+  wp_cache_reset();
+  unset($current_blogid);
+  ?>
 </div><!-- #supplementary -->
