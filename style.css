@@ -1777,9 +1777,15 @@ section.recent-posts .other-recent-posts li:after {
 .widget ul li {
 	color: #777;
 	font-size: 13px;
+	display: inline;
+}
+.widget ul li:after {
+  content: ', ';
+}
+.widget ul li:last-child {
+  content: '';
 }
 .widget a {
-	font-weight: bold;
 	text-decoration: none;
 }
 .widget a:hover,
