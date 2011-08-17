@@ -2894,6 +2894,138 @@ header {
   height: 195px;  
 */
 }
+
+/*Home page header*/
+.statement {
+  position: relative;
+  width:585px;
+  height: 350px;
+  top: -40px;
+  left: -55px;
+}
+.statement h2 {
+  font-size:22px;
+  line-height:1.8;
+  position: relative;
+  top: -190px;
+  margin:120px 90px 151px 100px;
+  font-weight: normal;
+  font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.statement h2 em, .bio em {font-size: 50px;line-height:1;font-style: normal}
+.curlie{
+  font-family:arial, helvetica, sans-serif;
+  font-size: 250px;
+  line-height: 1.2;
+  margin: 0 0 0 0;
+  color: rgba(0,0,0, 0.2);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  height: 280px;
+}
+.bob {
+  background:url("images/bocoup-604.png") no-repeat scroll right top transparent;
+  height: 470px;
+  width: 389px !important;
+  top: -95px;
+  position: absolute;
+  left: 530px;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .statement {
+    width: 415px;
+    height: 390px;
+    top: -10px;
+    left: -5px;
+  }
+  .statement h2 {
+    font-size:16px;
+    line-height:1.5;
+    top: -160px;
+  }
+  .curlie{
+    font-size:210px;
+    height: 200px;
+  }
+  .bob {
+    background:url("images/bocoup-400.png") no-repeat scroll right top transparent;
+    height: 400px;
+    width: 258px !important;
+    top: 0;
+    left: 430px;
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 547px) and (max-width: 767px) {
+  .statement {
+    position: relative;
+    width:500px;
+    height: 50px;
+    top: -40px;
+    left: -15px;
+  }
+  .statement h2 {
+    font-size:16px;
+    line-height:1.8;
+    position: relative;
+    top: -150px;
+    margin:120px 30px 51px 70px;
+  }
+  .curlie{
+    font-family:arial, helvetica, sans-serif;
+    font-size: 150px;
+    line-height: 1.2;
+    margin: 0 0 0 0;
+    color: rgba(0,0,0, 0.2);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+    height: 180px;
+  }
+  .bob {
+    background:url("images/bocoup-200.png") no-repeat scroll right top transparent;
+    height: 140px;
+    width: 90px !important;
+    top: 50px;
+    position: absolute;
+    left: 500px;
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 547px) {
+  .statement {
+    width: 205px;
+    height: 400px;
+    top: 30px;
+    position: relative;
+    left: 0px;
+    height: auto;
+    margin: 0 0 80px 0;
+  }
+  .statement h2 {
+    font-size:16px;
+    line-height:1.5;
+    top: 0px;
+    margin: 0px;
+  }
+  .curlie{
+    display: none;
+  }
+  .bob {
+    background:url("images/bocoup-200.png") no-repeat scroll right top transparent;
+    height: 140px;
+    width: 90px !important;
+    top: 80px;
+    left: 230px;
+    border-bottom: none;
+    position: absolute;
+  }
+}
+
+
+/*Thumbnails*/
 .thumb {
   position: relative;
   height: 130px;
@@ -2902,25 +3034,7 @@ header {
 }
 .bio   {display: block;font-size:20px;line-height: 39px;margin:20px 0 30px 0px;padding: 0px;font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;color: rgba(20, 20, 20, 0.796875);}
 .mastimg  {height:228px; border-bottom: 1px solid #bbbbbb; margin-top: 40px;}
-.bob {
-  background:url("images/bocoup-604.png") no-repeat scroll right top transparent;
-  height: 470px;
-  width: 389px !important;
-  top: -95px;
-  position: absolute;
-  right: -80px;
-  border-bottom: 1px solid #C2C2C2;
-}
-header .bob {
-  background:url("images/bocoup-604.png") no-repeat scroll right top transparent;
-  height: 258px;
-  margin-top: 0;
-  top: -103px;
-  position: absolute;
-  right: -10px;
-  float: right;
-  
-}
+
 /*
 .sam   {background: url(http://a3.twimg.com/profile_images/808132671/sam-clearman.jpg)   no-repeat -135px -160px; border: 1px solid #bbbbbb;}
 .alistair {background: url(http://a3.twimg.com/profile_images/275415881/me.jpg)   no-repeat 0px  0px;   border: 1px solid #bbbbbb; }
@@ -2983,36 +3097,6 @@ h1.section  {
   font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;
 }
 #color{border-bottom: 1px solid #3F002A;}
-.statement {
-  position: relative;
-  width:585px;
-  height: 350px;
-  top: -40px;
-  left: -55px;
-}
-.statement h2 {
-  font-size:22px;
-  line-height:1.8;
-  margin:120px 0 151px 100px;
-  font-weight: normal;
-  font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;
-  color: #444;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  position: relative;
-  top: -190px;
-  margin:0px 90px
-}
-.statement h2 em, .bio em {font-size: 50px;line-height:1;font-style: normal}
-.navi h2 a  {display:block;margin:-4px 0 0 -4px;padding:15px 0;position:relative;text-align:center;width:136px;color: #222;text-shadow:  0 1px 0 rgba(255, 255, 255, 0.5)}
-.curlie{
-  font-family:arial, helvetica, sans-serif;
-  font-size:250px;
-  line-height: 1.2;
-  margin: 0 0 0 0;
-  color: rgba(0,0,0, 0.2);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
-  height: 280px;
-}
 
 /*Color Blocks*/
 .colora{background-color: #dd4f4c;}

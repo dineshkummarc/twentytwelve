@@ -10,6 +10,8 @@
  */
 ?>
     <hr>
+    <hr class="clear space">
+    
     <div class="container">
   		<div class="one-third column">          
   		  <p>
@@ -33,19 +35,10 @@
   	</div><!-- container -->
   	
 	</div><!-- #main -->
-
-	<footer id="colophon" role="contentinfo">
-
-			<?php
-				/* A sidebar in the footer? Yep. You can can customize
-				 * your footer with three columns of widgets.
-				 */
-				# get_sidebar( 'footer' );
-			?>
-	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <hr class="clear space">
+
 <div class="center">
   <a class="center html5" href="http://www.w3.org/html/logo/">
     <img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" height="64" alt="HTML5 Powered with Connectivity / Realtime, CSS3 / Styling, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with Connectivity / Realtime, CSS3 / Styling, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
@@ -53,8 +46,6 @@
   <a href="http://bostonbuilt.org"><img height="54" src="http://bostonbuilt.org/icon.php?q=built_in_boston_color_fancy.png&amp;u=www.bocoup.com"></a>
 </div>
 <hr class="clear space">
-
-<?php wp_footer(); ?>
 
 </body>
 </html>
