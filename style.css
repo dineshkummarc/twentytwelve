@@ -733,8 +733,8 @@ a:hover {
 .hentry,
 .no-results {
 	border-bottom: 1px solid #ddd;
-	margin: 0 0 625em;
-	padding: 0 0 625em;
+	margin: 0 0 .625em;
+	padding: 0 0 .625em;
 	position: relative;
 }
 .hentry:last-child,
