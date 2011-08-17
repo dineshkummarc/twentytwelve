@@ -3115,11 +3115,12 @@ ul.listless  {list-style-type: none;margin: 0;}
 .alignright  {float: right; margin: 0 0 10px 10px}
 .alignleft  {float: left; margin: 0 10px 10px 0}
 
-h1.section, h2.section  {;margin: 0 0 10px 0;}
+h1.section, h2.section  {margin: 0 0 10px 0;}
 h1.section  {
-  line-height: 1.4;padding: 0 0 7px 0;
-  font-size: 26px;
-  font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;
+  margin: 20px 0 7px 0;
+  border-bottom: 1px solid #C2C2C2;
+  font-size: 20px;
+  font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;
 }
 #color{border-bottom: 1px solid #3F002A;}
 
