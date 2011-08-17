@@ -2399,8 +2399,47 @@ p.comment-form-comment {
 	#site-description {
 		font-size: 12px;
 	}
+	#access {
+	  float: none;
+	  position: relative;
+	  top: 180px;
+	  height: 540px;
+	}
 	#access ul {
-		font-size: 12px;
+		font-size: 16px;
+	  background: rgba(0,0,0,.4);
+	  padding: 10px;
+	  -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;    
+	}
+	#access li {
+	  display: block;
+	  float: none;
+	}
+	#access li a {
+	  background: #ddd;
+	  display: block;
+	  float: none;
+	  clear: both;
+	  border-bottom: 1px solid #333;
+	  border-top: 1px solid #fff;
+	}
+	#access li:first-child a{
+    -webkit-border-top-left-radius: 19px;
+    -webkit-border-top-right-radius: 19px;
+    -moz-border-radius-topleft: 19px;
+    -moz-border-radius-topright: 19px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+	}
+	#access li:last-child a{
+    -webkit-border-bottom-right-radius: 19px;
+    -webkit-border-bottom-left-radius: 19px;
+    -moz-border-radius-bottomright: 19px;
+    -moz-border-radius-bottomleft: 19px;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
 	}
 	article.intro .entry-content {
 		font-size: 12px;
@@ -2959,66 +2998,45 @@ header {
     border-bottom: none;
   }
 }
-@media only screen and (min-width: 547px) and (max-width: 767px) {
+@media only screen and (min-width: 650px) and (max-width: 767px) {
   .statement {
-    position: relative;
     width:500px;
-    height: 50px;
-    top: -40px;
+    height: 150px;
+    top: -30px;
     left: -15px;
   }
   .statement h2 {
     font-size:16px;
-    line-height:1.8;
+    line-height: 1.8;
     position: relative;
     top: -150px;
     margin:120px 30px 51px 70px;
   }
   .curlie{
-    font-family:arial, helvetica, sans-serif;
     font-size: 150px;
-    line-height: 1.2;
-    margin: 0 0 0 0;
-    color: rgba(0,0,0, 0.2);
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
     height: 180px;
   }
   .bob {
     background:url("images/bocoup-200.png") no-repeat scroll right top transparent;
     height: 140px;
     width: 90px !important;
-    top: 50px;
+    top: 60px;
     position: absolute;
     left: 500px;
     border-bottom: none;
   }
 }
 
-@media only screen and (max-width: 547px) {
-  .statement {
-    width: 205px;
-    height: 400px;
-    top: 30px;
-    position: relative;
-    left: 0px;
-    height: auto;
-    margin: 0 0 80px 0;
-  }
-  .statement h2 {
-    font-size:16px;
-    line-height:1.5;
-    top: 0px;
-    margin: 0px;
-  }
-  .curlie{
+@media only screen and (max-width: 650px) {
+  .statement, .curlie, .homecontent{
     display: none;
   }
   .bob {
     background:url("images/bocoup-200.png") no-repeat scroll right top transparent;
     height: 140px;
     width: 90px !important;
-    top: 80px;
-    left: 230px;
+    top: -560px;
+    left: 90px;
     border-bottom: none;
     position: absolute;
   }
