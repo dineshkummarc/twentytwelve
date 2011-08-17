@@ -501,6 +501,7 @@ a:hover {
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 2;
+	height: 30px
 }
 
 @font-face {
@@ -713,7 +714,7 @@ a:hover {
 
 #main {
 	clear: both;
-	padding: 3.625em 0 0;
+	padding: 1.625em 0 0;
 }
 .page-title {
 	color: #666;
