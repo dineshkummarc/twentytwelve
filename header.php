@@ -110,7 +110,18 @@
 	<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
 	<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
 	<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
-	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	<?php 
+
+	global $wpdb;
+  $current_blogid = $wpdb->blogid;
+  $wpdb->set_blog_id(1);
+  wp_cache_reset();
+  wp_nav_menu( array( 'theme_location' => 'primary' ) );
+  $wpdb->set_blog_id($current_blogid);
+  wp_cache_reset();
+  unset($current_blogid);
+  
+  ?>
 </nav><!-- #access -->
 
       <!-- <nav id="access" role="navigation">
