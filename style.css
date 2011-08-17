@@ -3186,3 +3186,8 @@ div.pad-1, div.pad-2, div.pad-3, div.pad-4, div.pad-5, div.pad-6, div.pad-7, div
 .pad-22 {width:870px;}
 .pad-23 {width:910px;}
 .pad-24, div.pad-24 {width:950px;margin:0;}
+
+h3 {
+  font-family: 'OFL Sorts Mill Goudy TT', georgia, times, serif;
+  font-size: 16px;
+}
