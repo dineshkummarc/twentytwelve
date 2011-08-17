@@ -3101,6 +3101,7 @@ hr.clear {
   clear:both;
   height: 1px;
   margin: 0px;
+  visibility: hidden;
 }
 hr.space {
   margin: 20px 0px;
